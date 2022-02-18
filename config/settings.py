@@ -47,7 +47,9 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'phople.middleware.DisableCSRF',
+    
+    #'phople.middleware.DisableCSRF',
+    
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -69,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'config.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
